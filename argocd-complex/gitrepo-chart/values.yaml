@@ -1,0 +1,15 @@
+argocd:
+  project: default
+  repoURL: https://github.com/Baraziza/argo
+  targetRevision: HEAD
+  path: argocd-complex/app-chart
+  
+applications:
+  - name: myapp-prod
+    namespace: prod
+    values:
+      environment: production
+  - name: myapp-staging
+    namespace: staging
+    values:
+      environment: staging

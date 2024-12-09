@@ -1,0 +1,15 @@
+app:
+  name: myapp-staging
+  replicas: 1
+  image:
+    repository: nginx
+    tag: latest
+  service:
+    type: ClusterIP
+  resources:
+    limits:
+      cpu: 200m
+      memory: 256Mi
+    requests:
+      cpu: 100m
+      memory: 128Mi

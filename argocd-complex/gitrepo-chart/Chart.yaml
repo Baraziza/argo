@@ -1,0 +1,5 @@
+apiVersion: v2
+name: gitrepo-chart
+description: ArgoCD GitOps Configuration Chart
+version: 0.1.0
+type: application
